@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.box {
+    border: 2px solid blue;
+    padding: 10px;
+    display: inline-block;
+    width: 100vw;
+    font-size: 5rem;
+}
+
+.box .subtitulo {
+    color: green;
+}
+
+.box .subtitulo+h3 {
+    background-color: indigo;
+    color: white;
+}
+
+body .box:nth-child(3) {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

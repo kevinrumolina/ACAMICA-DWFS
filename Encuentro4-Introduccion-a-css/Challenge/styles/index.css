@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 480px;
+}
+img {
+    border: 5px dotted red
+}
+#title {
+    font-size: 48px;
+}
+main p:first-of-type {
+    margin: 10px 0 30px;
+    /*font-style: italic;*/
+}
+main p:last-child, .lorem {
+    font-size: 2rem;
+}
