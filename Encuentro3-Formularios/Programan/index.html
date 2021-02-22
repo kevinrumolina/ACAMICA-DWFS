@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Acamica</title>
+</head>
+<body>
+    <form action="">
+        <label>
+            Nombre
+            <input type="text" name="nombre" placeholder="Nombre" required>
+        </label>
+        <label>
+            Apellido
+            <input type="text" name="Apellido" placeholder="Apellido" required>
+        </label>
+        <label>
+            E-mail
+            <input type="email" name="email" placeholder="example@gmail.com" required>
+        </label>
+        <label>
+            País de procedencia
+            <select name="pais" required>
+                <option value="">seleccione el país</option>
+                <option value="argentina">Argentina</option>
+                <option value="colombia">Colombia</option>
+                <option value="mexico">Mexico</option>
+                <option value="peru">Peru</option>
+                <option value="otro">Otro</option>
+            </select>
+        </label>
+        <label>
+            A que carrera deseas inscribirte?
+            <select name="carrera" required>
+                <option value="">selecciona la carrera</option>
+                <option value="ux">UX/UI</option>
+                <option value="ds">Data Science</option>
+                <option value="dwfs">Desarrollo Web FullStack</option>
+                <option value="fea">Front End Avanzado</option>
+            </select>
+        </label>
+        <div>
+            <p>Modalidad:</p>
+            <label>
+                Presencial
+                <input type="radio" name="modalidad" value="presencial" required>
+            </label>
+            <label>
+                Online
+                <input type="radio" name="modalidad" value="online" required>
+            </label>
+        </div>
+        <div>
+            <p>¿Estas trabajando actualmente?</p>
+            <label>
+                si
+                <input type="checkbox" name="trabajo" value="si">
+            </label>
+        </div>
+        <label>
+            Teléfono de contacto
+            <input type="tel" name="telefono">
+        </label>
+        <label>
+            Descripción personal
+            <textarea name="descripción" cols="30" rows="10"></textarea>
+        </label>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reestablecer</button>
+    </form>
+</body>
+</html>
