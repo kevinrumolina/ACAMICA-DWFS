@@ -26,49 +26,38 @@ main::after {
     background-color: black;
 }
 .hand-container{
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     background-color: transparent;
-    margin: 50px;
     animation-iteration-count: infinite;
-    transform-origin: center;
     position: absolute;
     top: 0;
     left: 0;
 }
-
-.seconds {
-    animation: rotar 60s linear;
-}
-.minutes {
-    animation: rotar 3600s linear;
-}
-.hours {
-    animation: rotar 43200s linear;
-}
-
+.seconds { animation: rotar 60s linear; }
+.minutes { animation: rotar 3600s linear; }
+.hours { animation: rotar 43200s linear; }
 .seconds::after,.minutes::after,.hours::after {
     content: '';
     width: 6px;
     position: absolute;
-    left: 197px;
+    left: 247px;
 }
 .seconds::after {
     height: 150px;
-    top: 50px;
+    top: 100px;
     background-color: black;
 }
 .minutes::after {
     height: 100px;
-    top: 100px;
+    top: 150px;
     background-color: blue;
 }
 .hours::after {
     height: 50px;
-    top: 150px;
+    top: 200px;
     background-color: green;
 }
-
 @keyframes rotar {
     from {
         transform: rotateZ(0deg);
