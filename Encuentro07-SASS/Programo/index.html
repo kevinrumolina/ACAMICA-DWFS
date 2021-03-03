@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>Formulario con SASS</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <form action="" class="formulario">
-        <label>
-            Nombre:
-            <input type="text" name="nombre">
-        </label>
-        <label>
-            Correo Electronico:
-            <input type="email" name="mail">
-        </label>
-        <label>
-            Comentarios
-            <textarea name="comments" cols="30" rows="10"></textarea>
-        </label>
+    <form action="#" method="" class="formularios">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name">
 
-        <div class="button-container">
-            <button type="reset" class="reset">Borrar</button>
-            <button type="submit" class="submit">Enviar</button>
+        <label for="mail">Correo electrónico:</label>
+        <input type="email" name="mail" id="mail">
+
+        <label for="comment">Comentarios:</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+        <div class="ctn-btn">
+            <button type="reset">Borrar</button>
+            <button type="submit">Enviar</button>
         </div>
     </form>
 </body>
