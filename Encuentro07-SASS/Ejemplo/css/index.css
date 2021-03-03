@@ -1,0 +1,13 @@
+div {
+  background-color: red;
+  padding: 30px;
+}
+
+div h1 {
+  width: 50vw;
+  font-size: 31px;
+  background-color: blue;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+/*# sourceMappingURL=index.css.map */

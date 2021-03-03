@@ -1,0 +1,16 @@
+$color: blue;
+@mixin title {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+    background-color: red;
+    padding: 30px;
+    h1 {
+        width: 100vw - 50vw;
+        font-size: 16px + 15px;
+        background-color: $color;
+        @include title;
+    }
+}

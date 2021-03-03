@@ -1,0 +1,41 @@
+@import './modules/base';
+@import './modules/variables';
+
+body {
+    background-color: $bg-primary;
+    font-family: $primary-font;
+    .formulario {
+        background: $bg-secondary;
+        width: 500px;
+        height: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 2px solid $border-primary;
+        border-radius: 10px;
+        input {
+            border-radius: 5px;
+            border: 1px solid $border-primary;
+            width: 100%;
+        }
+        textarea {
+            color: blue
+        }
+        button {
+            width: 200px;
+            height: 100px;
+            &.submit {
+                background-color: green ;
+            }
+            &.reset {
+                background-color: $bg-primary;
+            }
+            &:hover {
+                background-color: blue;
+            }
+            &:active {
+                background-color: yellow;
+            }
+        }
+    }
+}
+

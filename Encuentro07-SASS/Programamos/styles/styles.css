@@ -1,0 +1,110 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Calibri, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  padding: 5px 30px;
+  border-bottom: 2px solid #1fb3ed;
+}
+
+header .logo {
+  float: left;
+}
+
+header h1 {
+  float: left;
+  margin-left: 10px;
+  line-height: 60px;
+}
+
+header nav {
+  float: right;
+}
+
+header nav li {
+  display: inline-block;
+  padding-left: 10px;
+  list-style: none;
+  line-height: 60px;
+}
+
+header nav li:hover {
+  color: #1fb3ed;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+main {
+  padding-top: 60px;
+}
+
+main article {
+  padding: 40px 10px;
+}
+
+main article.first-article {
+  float: left;
+  width: 50%;
+}
+
+main article.second-article {
+  display: inline-block;
+  width: 50%;
+}
+
+main article .button {
+  margin: 20px auto;
+  width: 80px;
+  padding: 10px;
+  color: #fff;
+  background: red;
+  display: block;
+}
+
+main article .button a {
+  text-decoration: none;
+  color: white;
+}
+
+main form {
+  border: 2px solid #1fb3ed;
+  padding: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+main form label, main form button, main form input {
+  width: 100%;
+  margin-top: 5px;
+}
+
+main form input {
+  padding: 10x;
+}
+
+main form button {
+  margin: 15px 0;
+}
+
+main form .button {
+  margin: 20px auto;
+  width: 80px;
+  padding: 10px;
+  color: #fff;
+  background: green;
+  display: block;
+}
+/*# sourceMappingURL=styles.css.map */
