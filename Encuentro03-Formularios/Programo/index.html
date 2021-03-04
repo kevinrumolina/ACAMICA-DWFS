@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo forms</title>
+    <style>
+        .option-container {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre">
+            <label>
+                E-mail
+                <input type="email" name="email" placeholder="example@gmail.com">
+            </label>
+            <label>
+                E-mail
+                <input type="email" name="email" placeholder="example@gmail.com">
+            </label>
+            <label>
+                Password
+                <input type="password" name="password">
+            </label>
+            <label>
+                Telefono
+                <input type="tel" name="fel" placeholder="573089293">
+            </label>
+        </fieldset>
+        <label for="country">Pais</label>
+        <select name="country" id="country" required>
+            <option value="">Selecciona tu país de procedencia</option>
+            <option value="argentina">Argentina</option>
+            <option value="colombia">Colombia</option>
+            <option value="mexico">Mexico</option>
+            <option value="peru">Peru</option>
+            <option value="chile">Chile</option>
+        </select>
+        <div id="" class="option-container">
+            <h2>Comida Favorita</h2>
+            <label>
+                Pizza
+                <input type="checkbox" name="food" value="pizza">
+            </label>
+            <label>
+                Hamburguesa
+                <input type="checkbox" name="food" value="hamburguesa">
+            </label>
+            <label>
+                Pasta
+                <input type="checkbox" name="food" value="pasta">
+            </label>
+            <label>
+                Todas
+                <input type="checkbox" name="food" value="todas">
+            </label>
+        </div>
+        <div class="option-container">
+            <h2>Estación favorita</h2>
+            <label>
+                Team Verano
+                <input type="radio" name="weather" value="verano" required>
+            </label>
+            <label>
+                Team invierno
+                <input type="radio" name="weather" value="invierno" required>
+            </label>
+            <label>
+                Otoño
+                <input type="radio" name="weather" value="otoño" required>
+            </label>
+            <label>
+                Primavera
+                <input type="radio" name="weather" value="primavera" required>
+            </label>
+            <label>
+                Ninguna
+                <input type="radio" name="weather" value="ninguna" required>
+            </label>
+        </div>
+        <label>
+            Dejanos tus comentarios:
+            <textarea name="comentarios" cols="30" rows="10" placeholder="Comentanos como te podemos ayudar"></textarea>
+        </label>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
