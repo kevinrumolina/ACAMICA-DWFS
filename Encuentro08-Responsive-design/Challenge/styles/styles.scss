@@ -1,0 +1,16 @@
+@import './variables';
+@import './baserules';
+
+.box {
+    width: $box-size;
+    height: $box-size;
+    background-color: blue;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 801px) {
+    .box {
+        display: block;
+    }
+}
