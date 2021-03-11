@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    font-size: 20px;
+}
+.article__link {
+    color: #000;
+    text-decoration: none;
+}
+.article__title {
+    font-size: 2.5rem;
+}
+.blue__article--title .article__title {
+    color: blue;
+}
+.article__author--image {
+    width: 200px;
+    float: right;
+}
+.article__author--name {
+    font-size: 1.5rem;
+}
+.article__date {
+    font-size: 1.2rem;
+}
+.article__description {
+    font-size: 1.2rem;
+}
