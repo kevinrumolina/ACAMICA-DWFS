@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-principal {
+    display: flex;
+}
+.contenedor {
+    width: 100vw;
+    background-color: #AAAAAA;
+    display: flex;
+    flex-flow: column wrap;
+    height: 800px;
+    margin-top: 10px;
+}
+.sub-container {
+    display: flex;
+}
+.caja {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-size: 36px;
+}
+
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.green {
+    background-color: green;
+}
+.brown {
+    background-color: brown;
+}
+
