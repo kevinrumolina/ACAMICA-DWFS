@@ -1,0 +1,6 @@
+@mixin title {
+    background-color: $main-color;
+    color: $white;
+    font-size: 2rem + 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
