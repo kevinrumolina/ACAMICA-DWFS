@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+}
+
+.header {
+    grid-area: fulanito;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: minmax(150px, 250px) 2fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-gap: 5px 10px;
+    grid-template-areas: 
+    "fulanito sidebar sidebar"
+    "fulanito main main"
+    "fulanito footer footer";
+}
+
+.grid-item {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.item-1 {
+    grid-area: item1;
+}
+.item-2 {
+    grid-area: item2;
+}
+.item-3 {
+    grid-area: item3;
+}
+.item-4 {
+    grid-area: item4;
+}
+.item-5 {
+    grid-area: item5;
+}
+li {
+    text-align: center;
+}
+
+.main ul {
+    display: grid;
+    width: 100%;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "item1 item3 item4"
+    "item2 . item5";
+}
+
+@media screen and (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+            "sidebar sidebar"
+            "fulanito ."
+            "fulanito main"
+            "fulanito main"
+            "fulanito ."
+            "footer footer";
+    }
+}
+
+.bloque-1 {
+    grid-area: bloque1;
+    border: 1px solid black;
+}
+.bloque-2 {
+    grid-area: bloque2;
+    border: 1px solid black;
+}
+.grid-container2 {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "bloque1 bloque1 bloque1"
+    "bloque1 bloque1 bloque1";
+}
